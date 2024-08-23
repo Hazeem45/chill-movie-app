@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/icon.svg" />
+    <title>Chill - Register</title>
+    <link rel="stylesheet" href="./css/auth-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container register">
+      <div class="form-container form-register">
+        <form action="./index.html" method="">
+          <div class="title">
+            <img src="./assets/svg/logo.svg" />
+            <h1>daftar</h1>
+            <p>selamat datang!</p>
+          </div>
+          <div class="form-box">
+            <div class="input-form">
+              <label for="username">username</label>
+              <input id="username" type="text" placeholder="Masukkan Username" />
+            </div>
+            <div class="input-form">
+              <label for="password">password</label>
+              <input id="password" type="password" placeholder="Masukkan Password" />
+              <span class="password-toggle-icon password-register"><i class="fa fa-eye-slash"></i></span>
+            </div>
+            <div class="input-form">
+              <label for="password">confirm password</label>
+              <input id="confirm-password" type="password" placeholder="Masukkan Ulang Password" />
+              <span class="password-toggle-icon password-register-2"><i class="fa fa-eye-slash"></i></span>
+              <div class="option-auth">
+                <div>
+                  <p>Sudah punya akun?</p>
+                  <a href="./login.html">masuk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="submit-auth">daftar</button>
+        </form>
+        <div>
+          <div class="button-separator">atau</div>
+          <button class="google-auth" onclick="alert('this feature is under development')">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/79c6/a04d/7dff82097a22ce080aa49aa3352fd7a2?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eL5jvPyEev~PpPWKfhv7nCCss2gyhG81IltmCywXbBLMdv5gwvIwueHbyuHB67Y8dO2NexJBLJzvo4~8VHu3OrRK-hBuVaSHYK1LK0PRtS5EkhZoqY6LDymyJEJViuTNH-PLPtpfAmZFLSl4ULd~1RmarBhn2DgSRWHGse97CSU1xHgCZjFH0scM0btNnrA7~UVBZIXM14UTtg5jr-YTU2YHDhDYCHJw4c~HgXQmBRug11hNCMdnS9NOv-62f4QY5E21mv7fYEOoChBHlVI7QsBWq5H7El8r-O-9DgPbUhguJ9Ve3vJDhSKBm-JsqTcRd7yXBjD8IYXJ-hIGqVV-3g__"
+              width="18"
+            />
+            <p>daftar dengan google</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/toggle-password.js"></script>
+  </body>
+</html>

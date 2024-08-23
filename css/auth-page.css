@@ -20,17 +20,26 @@ a {
 }
 
 .login {
-  background-image: url(../assets/img/bg-login.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/bg-login.jpeg);
+}
+
+.register {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/bg-register.jpeg);
 }
 
 .form-container {
-  padding: 30px;
+  padding: 35px 30px;
   min-width: 27rem;
   min-height: 37rem;
   box-sizing: border-box;
   background-color: #181a1cd6;
   border-radius: 16px;
   position: relative;
+  backdrop-filter: blur(2px);
+}
+
+.form-register {
+  padding: 20px 30px;
 }
 
 .button-separator {
@@ -111,6 +120,10 @@ a {
   right: 15px;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.password-toggle-icon.password-register {
+  transform: translateY(-10%);
 }
 
 .password-toggle-icon i {
@@ -201,6 +214,10 @@ button:active {
     width: 140px;
   }
 
+  .form-box {
+    gap: 20px;
+  }
+
   .button-separator,
   .form-box div.option-auth,
   .form-box label,
@@ -227,6 +244,14 @@ button:active {
 
   .password-toggle-icon {
     top: 50%;
-    transform: translateY(-55%);
+    transform: translateY(-57%);
+  }
+
+  .password-toggle-icon.password-register {
+    transform: translateY(0%);
+  }
+
+  .password-toggle-icon.password-register-2 {
+    transform: translateY(-30%);
   }
 }
