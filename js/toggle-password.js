@@ -1,28 +1,19 @@
-const passwordField = document.getElementById("password");
-const togglePassword = document.querySelector(".password-toggle-icon i");
-const confirmPasswordField = document.getElementById("confirm-password");
-const toggleConfirmPassword = document.querySelector(".password-toggle-icon.password-register-2 i");
+const toggleIcon = document.querySelectorAll(".password-toggle-icon");
 
-togglePassword.addEventListener("click", function () {
-  if (passwordField.type === "password") {
-    passwordField.type = "text";
-    togglePassword.classList.remove("fa-eye-slash");
-    togglePassword.classList.add("fa-eye");
-  } else {
-    passwordField.type = "password";
-    togglePassword.classList.remove("fa-eye");
-    togglePassword.classList.add("fa-eye-slash");
-  }
-});
+toggleIcon.forEach((icon) => {
+  icon.addEventListener("click", function () {
+    const inputId = icon.getAttribute("data-input");
+    const passwordField = document.getElementById(inputId);
+    const iconElement = icon.querySelector("i");
 
-toggleConfirmPassword.addEventListener("click", function () {
-  if (confirmPasswordField.type === "password") {
-    confirmPasswordField.type = "text";
-    toggleConfirmPassword.classList.remove("fa-eye-slash");
-    toggleConfirmPassword.classList.add("fa-eye");
-  } else {
-    confirmPasswordField.type = "password";
-    toggleConfirmPassword.classList.remove("fa-eye");
-    toggleConfirmPassword.classList.add("fa-eye-slash");
-  }
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      iconElement.classList.remove("fa-eye-slash");
+      iconElement.classList.add("fa-eye");
+    } else {
+      passwordField.type = "password";
+      iconElement.classList.remove("fa-eye");
+      iconElement.classList.add("fa-eye-slash");
+    }
+  });
 });

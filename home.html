@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill - Movies</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/icon.svg" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-menu">
+        <a>
+          <img src="./assets/svg/logo.svg" class="logo-text" />
+          <img src="./assets/svg/icon.svg" class="logo-without-text" />
+        </a>
+        <a>series</a>
+        <a>film</a>
+        <a>daftar saya</a>
+      </div>
+      <div class="profile-wrap">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/972a/aa8c/b01f0e1dc620f3f4d3328f6b37392f9a?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yr2qd3xpG6DbAQr8g~av~~SA~pRI8S2k7~nja7N~xasYAr3g4Y74VM~dCSxrocYMxhJ97OpfcnklPglOpzz2EMliVH460vhMowpYNZMiIk3m~uNU5d38WlAEvO5sXi1~pLq3oJhMNaY4QnNXiXLk-pd06UBEsbDr0hE~JEGJGOBAun~RrIjvwlw08gbPaAw88E391NjBL7sb8djROJfDxA6-ifXq~k2TjRO6FTu5I6cGjASmwwU0~T9kjgTgG~57x-QyZtU6FbQnHPgKkCne0eZGhfE5PZMOXLgHxAzH7Rta2eEdnqwDJlyEUT0zg3hfC24uwSS8z1CJZF7xYUA1aQ__"
+          alt="user-profile"
+        />
+        <div class="arrow-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="dropdown-wrap">
+          <div class="dropdown">
+            <ul>
+              <li>
+                <a href="" onclick="alert('this feature is under development')">
+                  <i class="fa fa-user" style="font-size: 18px; margin-right: 2px"></i>
+                  <p>profil saya</p>
+                </a>
+              </li>
+              <li>
+                <a href="" onclick="alert('this feature is under development')">
+                  <i class="fa fa-star" style="font-size: 18px; margin-left: -2px; color: gold"></i>
+                  <p>ubah premium</p>
+                </a>
+              </li>
+              <li>
+                <a href="./login.html">
+                  <i class="fa fa-sign-out" style="font-size: 18px; margin-top: 2px"></i>
+                  <p>keluar</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>duty after school</h1>
+          <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+          <div class="action-hero">
+            <button onclick="alert('this feature is under development')">mulai</button>
+            <button onclick="alert('this feature is under development')">
+              <img src="./assets/svg/info-icon.svg" alt="" />
+              <span>selengkapnya</span>
+            </button>
+            <span class="age-rating">18+</span>
+            <span id="volume-icon" class="volume-icon">
+              <img src="./assets/svg/volume-off.svg" alt="volume" id="volumeOffIcon" />
+              <img src="./assets/svg/volume-on.svg" alt="volume" id="volumeOnIcon" style="display: none" />
+            </span>
+            <audio id="audio"></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="movies"></section>
+
+    <script src="./js/homepage-script.js"></script>
+  </body>
+</html>
