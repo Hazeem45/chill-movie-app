@@ -1,0 +1,557 @@
+body {
+  background-color: #181a1c;
+  margin: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  background-color: #181a1c;
+  padding: 1rem 6rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 3;
+  top: 0;
+}
+
+.nav-menu {
+  font-size: 1.125em;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+.nav-menu img {
+  width: 104px;
+  height: 44px;
+  display: flex;
+}
+
+.nav-menu a {
+  cursor: pointer;
+}
+
+.nav-menu img.logo-without-text {
+  display: none;
+}
+
+.profile-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-wrap img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.arrow-icon {
+  width: 13px;
+}
+
+.arrow-icon span {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.arrow-icon span:first-child {
+  transform: rotate(-45deg) translate(3px, 7px);
+}
+
+.arrow-icon span:last-child {
+  transform: rotate(45deg) translate(1px, -0.5px);
+}
+
+.dropdown-wrap {
+  display: none;
+  padding: 15px;
+  position: absolute;
+  top: 35px;
+  right: -25px;
+}
+
+.dropdown {
+  background-color: #181a1c;
+  min-width: 170px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px -2px gray;
+  padding: 5px 0;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  padding: 15px 20px;
+}
+
+.dropdown ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.dropdown ul li a p {
+  margin: 0;
+}
+
+.dropdown ul li a:hover {
+  color: #3254ff;
+}
+
+.profile-wrap:hover .dropdown-wrap {
+  display: block;
+}
+
+.profile-wrap:hover .dropdown {
+  animation: dropdown 0.3s ease;
+}
+
+.profile-wrap:hover .arrow-icon span:first-child {
+  transform: rotate(45deg) translate(7px, -3px);
+}
+
+.profile-wrap:hover .arrow-icon span:last-child {
+  transform: rotate(-45deg) translate(0px, 1px);
+}
+
+/* section 1 */
+.hero-container {
+  position: relative;
+  height: 760px;
+  background-image: linear-gradient(0deg, rgba(24, 26, 28, 1) 3%, rgba(24, 26, 28, 0.55) 53%, rgba(24, 26, 28, 0) 100%), url(../assets/img/hero-bg.png);
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: 15.5%;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.127em;
+  max-width: 678px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  margin: 18px 0 0 0;
+}
+
+.action-hero {
+  display: flex;
+  gap: 13px;
+  margin-top: 50px;
+}
+
+.action-hero button {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 48px;
+  background-color: #0f1e93;
+  padding: 0.625em 1.625em;
+  cursor: pointer;
+}
+
+.action-hero button:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #22282a;
+}
+
+.action-hero button:active {
+  transform: scale(0.95);
+}
+
+.age-rating {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0.5em;
+  border-radius: 24px;
+  border: 1px solid white;
+  display: grid;
+  place-items: center;
+  cursor: default;
+}
+
+span.volume-icon {
+  position: absolute;
+  right: 0;
+  display: grid;
+  place-items: center;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volume-icon img {
+  width: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero-container {
+    height: 680px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    height: 585px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-menu {
+    gap: 4em;
+  }
+
+  .hero {
+    margin-top: 53px;
+  }
+
+  .hero-container {
+    height: 485px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-container {
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 0.8rem 3rem;
+  }
+
+  .nav-menu {
+    font-size: 1em;
+    gap: 2.5em;
+  }
+
+  .nav-menu img {
+    width: 93px;
+    height: 33px;
+  }
+
+  .profile-wrap img {
+    width: 35px;
+  }
+
+  .arrow-icon span {
+    width: 7px;
+    height: 2px;
+  }
+
+  .arrow-icon span:first-child {
+    transform: rotate(-45deg) translate(2px, 6px);
+  }
+
+  .arrow-icon span:last-child {
+    transform: rotate(45deg) translate(2px, -1.5px);
+  }
+
+  .profile-wrap:hover .arrow-icon span:first-child {
+    transform: rotate(45deg) translate(6px, -2px);
+  }
+
+  .profile-wrap:hover .arrow-icon span:last-child {
+    transform: rotate(-45deg) translate(0.5px, 1px);
+  }
+
+  .dropdown-wrap {
+    top: 30px;
+  }
+
+  .dropdown {
+    min-width: 145px;
+    padding: 3.5px 0;
+  }
+
+  .dropdown ul li {
+    padding: 10px 15px;
+  }
+
+  .dropdown ul li a {
+    font-size: 14px;
+  }
+
+  .hero-container {
+    height: 390px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    line-height: 21px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .action-hero {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-container {
+    height: 340px;
+  }
+
+  .hero-text p {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-menu {
+    font-size: 0.85em;
+    gap: 2em;
+  }
+
+  .nav-menu img {
+    width: 87px;
+    height: 27px;
+  }
+
+  .profile-wrap img {
+    width: 30px;
+  }
+
+  .dropdown-wrap {
+    top: 23px;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  .hero-container {
+    height: 290px;
+  }
+
+  .hero-text p {
+    margin: 13px 0 0 0;
+  }
+
+  .action-hero {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .nav-menu img {
+    width: 33px;
+    height: 23px;
+  }
+
+  .nav-menu img.logo-without-text {
+    display: flex;
+  }
+
+  .nav-menu img.logo-text {
+    display: none;
+  }
+
+  .profile-wrap img {
+    width: 32px;
+  }
+
+  .dropdown-wrap {
+    top: 30px;
+  }
+
+  .dropdown {
+    min-width: 135px;
+    padding: 2.5px 0;
+  }
+
+  .dropdown ul li {
+    padding: 7px 12px;
+  }
+
+  .dropdown ul li a {
+    font-size: 12px;
+  }
+
+  .hero-container {
+    height: 245px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+
+  .action-hero button {
+    font-size: 12px;
+  }
+
+  .age-rating {
+    font-size: 15px;
+  }
+
+  span.volume-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  .volume-icon img {
+    width: 16.5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-menu {
+    font-size: 0.63em;
+    gap: 2em;
+  }
+
+  .nav-menu img {
+    width: 30px;
+    height: 20px;
+  }
+
+  .profile-wrap img {
+    width: 27px;
+  }
+
+  .dropdown-wrap {
+    top: 20px;
+  }
+
+  .dropdown {
+    min-width: 130px;
+    padding: 1.5px 0;
+  }
+
+  .dropdown ul li {
+    padding: 5px 10px;
+  }
+
+  .dropdown ul li a {
+    font-size: 11px;
+  }
+
+  .hero-container {
+    height: 220px;
+  }
+
+  .hero-text p {
+    margin: 10px 0 0 0;
+  }
+
+  .action-hero {
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .hero-text {
+    left: 4%;
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-container {
+    height: 200px;
+  }
+
+  .hero-text {
+    bottom: 10.5%;
+  }
+
+  .hero-text p {
+    margin: 5px 0 0 0;
+  }
+
+  .action-hero {
+    margin-top: 8px;
+    gap: 7px;
+  }
+
+  .action-hero button {
+    margin: 4px 0;
+    font-size: 10px;
+  }
+
+  .action-hero button:nth-child(2) {
+    gap: 3.5px;
+  }
+
+  .action-hero button img {
+    width: 13.5px;
+  }
+
+  .age-rating {
+    margin: 5px 0;
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+    display: none;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
