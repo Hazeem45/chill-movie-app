@@ -73,26 +73,13 @@
               <img src="./assets/svg/volume-off.svg" alt="volume" id="volumeOffIcon" />
               <img src="./assets/svg/volume-on.svg" alt="volume" id="volumeOnIcon" style="display: none" />
             </span>
+            <audio id="audio"></audio>
           </div>
         </div>
       </div>
     </section>
     <section class="movies"></section>
 
-    <script>
-      const volumeIcon = document.getElementById("volume-icon");
-      const volumeOffIcon = document.getElementById("volumeOffIcon");
-      const volumeOnIcon = document.getElementById("volumeOnIcon");
-
-      volumeIcon.addEventListener("click", function () {
-        if (volumeOffIcon.style.display === "none") {
-          volumeOffIcon.style.display = "inline";
-          volumeOnIcon.style.display = "none";
-        } else {
-          volumeOffIcon.style.display = "none";
-          volumeOnIcon.style.display = "inline";
-        }
-      });
-    </script>
+    <script src="./js/homepage-script.js"></script>
   </body>
 </html>
