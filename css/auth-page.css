@@ -9,6 +9,11 @@ a {
   cursor: pointer;
 }
 
+div,
+img {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .container {
   height: 100vh;
   background-repeat: no-repeat;
