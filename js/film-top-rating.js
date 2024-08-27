@@ -6,13 +6,13 @@ const filmsTopRating = [
     series: true,
   },
   {
-    src: "https://image.tmdb.org/t/p/original/11keFudto4QrgrXChukexJwdHPe.jpg",
-    title: "moon-knight",
+    src: "https://image.tmdb.org/t/p/original/mvphQkTzkMyeJ1E7YmLDc8nc7SS.jpg",
+    title: "alya-san/tokidoki-bossoto",
     series: true,
   },
   {
-    src: "https://image.tmdb.org/t/p/original/mvphQkTzkMyeJ1E7YmLDc8nc7SS.jpg",
-    title: "alya-san/tokidoki-bossoto",
+    src: "https://image.tmdb.org/t/p/original/11keFudto4QrgrXChukexJwdHPe.jpg",
+    title: "moon-knight",
     series: true,
   },
   {

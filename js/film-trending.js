@@ -1,20 +1,20 @@
 const carouselTrendingFilm = document.getElementById("carousel-film-trending");
 const filmsTrending = [
   {
-    src: "https://image.tmdb.org/t/p/original/xQPgyZOBhaz1GdCQIPf5A5VeFzO.jpg",
-    title: "dark-knight",
+    src: "https://image.tmdb.org/t/p/original/isiGxhIx99SVIxrwZi8qeey4pZm.jpg",
+    title: "kimi-no-nawa",
   },
   {
-    src: "https://image.tmdb.org/t/p/original/jbwYaoYWZwxtPP76AZnfYKQjCEB.jpg",
-    title: "Deadpoll-n-Wolverine",
+    src: "https://image.tmdb.org/t/p/original/xQPgyZOBhaz1GdCQIPf5A5VeFzO.jpg",
+    title: "dark-knight",
   },
   {
     src: "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
     title: "interstellar",
   },
   {
-    src: "https://image.tmdb.org/t/p/original/isiGxhIx99SVIxrwZi8qeey4pZm.jpg",
-    title: "kimi-no-nawa",
+    src: "https://image.tmdb.org/t/p/original/jbwYaoYWZwxtPP76AZnfYKQjCEB.jpg",
+    title: "Deadpoll-n-Wolverine",
   },
   {
     src: "https://image.tmdb.org/t/p/original/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",

@@ -7,12 +7,6 @@ const newFilm = [
     topRating: true,
   },
   {
-    src: "https://image.tmdb.org/t/p/original/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
-    title: "loki",
-    updated: true,
-    topRating: false,
-  },
-  {
     src: "https://image.tmdb.org/t/p/original/8mRrl8lc7TrbdA1PFzUhQ0nFZ7R.jpg",
     title: "venom-3",
     updated: false,
@@ -21,6 +15,12 @@ const newFilm = [
   {
     src: "https://image.tmdb.org/t/p/original/o7MpXc9OR90fuGNRpe4R1qxA02x.jpg",
     title: "shikanoko",
+    updated: true,
+    topRating: false,
+  },
+  {
+    src: "https://image.tmdb.org/t/p/original/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
+    title: "loki",
     updated: true,
     topRating: false,
   },
@@ -40,6 +40,18 @@ const newFilm = [
     src: "https://image.tmdb.org/t/p/original/mvphQkTzkMyeJ1E7YmLDc8nc7SS.jpg",
     title: "alya-san/tokidoki-bossoto",
     updated: true,
+    topRating: false,
+  },
+  {
+    src: "https://image.tmdb.org/t/p/original/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+    title: "planet-apes",
+    updated: false,
+    topRating: false,
+  },
+  {
+    src: "https://image.tmdb.org/t/p/original/z1p34vh7dEOnLDmyCrlUVLuoDzd.jpg",
+    title: "godzilla-kong",
+    updated: false,
     topRating: false,
   },
   {
