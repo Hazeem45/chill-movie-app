@@ -2,11 +2,9 @@ const volumeIcon = document.getElementById("volume-icon");
 const volumeOffIcon = document.getElementById("volumeOffIcon");
 const volumeOnIcon = document.getElementById("volumeOnIcon");
 const audio = document.getElementById("audio");
-const file = `aHR0cHM6Ly9maXJlYmFzZXN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vdjAvYi9ycHMjZ2FtZSMyMDI0LmFwcHNwb3QuY29tL28vb3RoZXIlMkZzYXl1ciNnZW5qZXIubXAzP2FsdD1tZWRpYSZ0b2tlbj1hYjVhMzJiMSMxOTJiIzQ1NTEjYWYzNyNhZGIyNjg5Mjg3NjY=`;
-const src = atob(file);
-const str = src.split("#").join("-");
-audio.src = str;
-audio.volume = 0.5;
+const file = "https://firebasestorage.googleapis.com/v0/b/rps-game-2024.appspot.com/o/other%2Fred-alert3.mp3?alt=media&token=5d578258-e5cb-41f5-becf-ee591ae50bb7";
+audio.src = file;
+audio.volume = 0.3;
 let isPlaying = false;
 
 volumeIcon.addEventListener("click", function () {

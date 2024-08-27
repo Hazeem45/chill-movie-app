@@ -78,8 +78,59 @@
         </div>
       </div>
     </section>
-    <section class="movies"></section>
+    <section>
+      <div class="carousel-container">
+        <h2>Melanjutkan Tonton Film</h2>
+        <button class="prev" onclick="scrollPrev()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+        <div class="carousel" id="carousel"></div>
+        <button class="next" onclick="scrollNext()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="carousel-container">
+        <h2>Top Rating Film dan Series Hari ini</h2>
+        <button class="prev scroll-poster" onclick="scrollPrevTopRating()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+        <div class="carousel poster" id="carousel-top-rating"></div>
+        <button class="next scroll-poster" onclick="scrollNextTopRating()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="carousel-container">
+        <h2>Film Trending</h2>
+        <button class="prev scroll-poster" onclick="scrollPrevTrending()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+        <div class="carousel poster" id="carousel-film-trending"></div>
+        <button class="next scroll-poster" onclick="scrollNextTrending()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="carousel-container">
+        <h2>Rilis Baru</h2>
+        <button class="prev scroll-poster" onclick="scrollPrevNewFilm()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+        <div class="carousel poster" id="carousel-new-film"></div>
+        <button class="next scroll-poster" onclick="scrollNextNewFilm()">
+          <img src="./assets/svg/arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
 
-    <script src="./js/homepage-script.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/film-carousel.js"></script>
+    <script src="./js/film-top-rating.js"></script>
+    <script src="./js/film-trending.js"></script>
+    <script src="./js/film-new-release.js"></script>
   </body>
 </html>
