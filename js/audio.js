@@ -4,7 +4,7 @@ const volumeOnIcon = document.getElementById("volumeOnIcon");
 const audio = document.getElementById("audio");
 const file = "https://firebasestorage.googleapis.com/v0/b/rps-game-2024.appspot.com/o/other%2Fred-alert3.mp3?alt=media&token=5d578258-e5cb-41f5-becf-ee591ae50bb7";
 audio.src = file;
-audio.volume = 0.3;
+audio.volume = 0.5;
 let isPlaying = false;
 
 volumeIcon.addEventListener("click", function () {
