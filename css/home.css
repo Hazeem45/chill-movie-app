@@ -424,7 +424,6 @@ footer {
   margin: 20px 0;
   padding: 30px 6% 0;
   box-sizing: border-box;
-  color: #c1c2c4;
   font-size: 16px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -513,11 +512,15 @@ footer ul {
 
 .footer-list li {
   cursor: pointer;
+  color: #c1c2c4;
+}
+
+.footer-list li:hover {
+  color: white;
 }
 
 /* accordion expand */
 .footer-heading.active h3 {
-  padding: 5px;
   background-color: rgb(45, 45, 45);
 }
 
@@ -770,7 +773,7 @@ footer ul {
 
 @media screen and (max-width: 600px) {
   .nav-menu {
-    font-size: 0.85em;
+    font-size: 0.9em;
     gap: 2em;
   }
 
@@ -807,6 +810,7 @@ footer ul {
   /* footer */
   .footer-heading h3 {
     margin-bottom: 5px;
+    padding: 5px 7px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
@@ -847,7 +851,11 @@ footer ul {
 
 @media screen and (max-width: 500px) {
   nav {
-    padding: 0.8rem 1.5rem;
+    padding: 0.85rem 1.55rem;
+  }
+
+  .nav-menu {
+    gap: 1em;
   }
 
   .nav-menu img {
@@ -881,11 +889,11 @@ footer ul {
   }
 
   .hero-text h1 {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .hero-text p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16.8px;
   }
 
@@ -894,7 +902,7 @@ footer ul {
   }
 
   .age-rating {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   span.volume-icon {
@@ -911,7 +919,7 @@ footer ul {
   }
 
   .carousel-container h2 {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .carousel-poster-item {
@@ -941,12 +949,12 @@ footer ul {
   }
 
   footer {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
   }
 
   .footer-heading h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -962,11 +970,11 @@ footer ul {
 
 @media screen and (max-width: 450px) {
   nav {
-    padding: 0.8rem 1rem;
-    height: 56px;
+    padding: 0.85rem 0.9rem;
+    /* height: 56px; */
   }
 
-  .nav-menu {
+  /* .nav-menu {
     font-size: 0.75em;
     gap: 1.7em;
   }
@@ -1009,7 +1017,7 @@ footer ul {
   .action-hero {
     margin-top: 15px;
     gap: 10px;
-  }
+  } */
 
   .hero-text {
     left: 4%;
@@ -1019,6 +1027,10 @@ footer ul {
   section {
     padding-right: 0;
     padding-left: 4%;
+  }
+
+  footer {
+    padding: 30px 4% 0;
   }
 }
 
@@ -1040,7 +1052,7 @@ footer ul {
     gap: 7px;
   }
 
-  .action-hero button {
+  /* .action-hero button {
     margin: 4px 0;
     font-size: 10px;
   }
@@ -1055,7 +1067,7 @@ footer ul {
 
   .age-rating {
     margin: 5px 0;
-  }
+  } */
 }
 
 @keyframes dropdown {
