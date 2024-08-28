@@ -625,7 +625,8 @@ div.label-trending {
   }
 
   .dropdown-wrap {
-    top: 23px;
+    padding: 10px;
+    right: -20px;
   }
 
   .hero {
@@ -742,9 +743,14 @@ div.label-trending {
 }
 
 @media screen and (max-width: 450px) {
+  nav {
+    padding: 0.8rem 1rem;
+    height: 56px;
+  }
+
   .nav-menu {
-    font-size: 0.63em;
-    gap: 2em;
+    font-size: 0.75em;
+    gap: 1.7em;
   }
 
   .nav-menu img {
@@ -757,7 +763,8 @@ div.label-trending {
   }
 
   .dropdown-wrap {
-    top: 20px;
+    padding: 5px;
+    right: -13px;
   }
 
   .dropdown {
@@ -792,7 +799,8 @@ div.label-trending {
   }
 
   section {
-    padding: 0 4%;
+    padding-right: 0;
+    padding-left: 4%;
   }
 }
 
