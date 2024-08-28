@@ -13,14 +13,20 @@ const newFilm = [
     topRating: false,
   },
   {
-    src: "https://image.tmdb.org/t/p/original/o7MpXc9OR90fuGNRpe4R1qxA02x.jpg",
-    title: "shikanoko",
+    src: "https://image.tmdb.org/t/p/original/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
+    title: "frieren",
     updated: true,
     topRating: false,
   },
   {
     src: "https://image.tmdb.org/t/p/original/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
     title: "loki",
+    updated: true,
+    topRating: false,
+  },
+  {
+    src: "https://image.tmdb.org/t/p/original/o7MpXc9OR90fuGNRpe4R1qxA02x.jpg",
+    title: "shikanoko",
     updated: true,
     topRating: false,
   },
